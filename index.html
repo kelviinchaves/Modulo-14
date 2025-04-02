@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bungee&family=Cinzel+Decorative:wght@400;700;900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jersey+10&family=Jockey+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Passion+One:wght@400;700;900&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,700;1,700&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg sticky-top pt-4 pb-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title fs-1 fw-bold ">Vector<i class="bi bi-vector-pen"></i></h1>
+            <button data-bs-toggle="collapse" data-bs-target="#menu-navegacao" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex mt-3 mt-md-0">
+                    <li class="nav-item fw-bold">
+                        <a href="#carousel" class="nav-link active">
+                            <i class="bi bi-house-door me-1"></i>
+                            Home</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#portifolio" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Portifolio</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Sobre</a>
+                    </li>
+
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-smooth-scroll="true" data-bs-target="cabecalho">
+
+        <!--             CAROUSEL                    -->
+
+        <div class="carousel slide w-100" data-bs-ride="carousel" id="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000" alt="">
+
+                    <img class="w-100" src="./images/carousel/imagem1.png" />
+                </div>
+                <div class="carousel-item" data-bs-interval="3000" alt="Taças de vinho">
+
+                    <img class="w-100" src="./images/carousel/imagem2.png" />
+                </div>
+                <div class="carousel-item" data-bs-interval="3000" alt="Mesa com comida">
+
+                    <img class="w-100" src="./images/carousel/imagem3.png" />
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button class="active" type="button" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+
+        <!--            BARRA VERDE                  -->
+
+        <section class="content-2">
+            <div class="container ">
+                <h2 class="black fs-1 text-center pt-5">Designer <span class="wite">Responsivo</span></h2>
+            </div>
+        </section>
+
+        <!--              PORTFÓLIO                  -->
+
+        <section id="portifolio" class="pt-5 pb-5">
+            <div class="container pt-5 mt-5">
+                <div class="row">
+                    <h2 class="section-title text-center mt-5 mb-5">Minha
+                        <span class="text-colored">Experiencia</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-buttons">
+                            <button data-bs-toggle="tab" data-bs-target="#metodologias" type="button"
+                                class="fw-bold text-start nav-link text-colored active">Metodologias
+                                modernas</button>
+                            <button data-bs-toggle="tab" data-bs-target="#ui-ux" type="button"
+                                class="fw-bold text-start nav-link text-colored ">UI/UX</button>
+                            <button data-bs-toggle="tab" data-bs-target="#identidade" type="button"
+                                class="fw-bold text-start nav-link text-colored ">Identidades visuais</button>
+                            <button data-bs-toggle="tab" data-bs-target="#logo" type="button"
+                                class="fw-bold text-start nav-link text-colored ">Logo Tipos</button>
+                            <button data-bs-toggle="tab" data-bs-target="#ferramentas" type="button"
+                                class="fw-bold text-start nav-link text-colored ">Ferramentas utilizadas</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="metodologias">
+                                <div class="row">
+                                    <div class=" col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/portifolio/banner1.jpeg"
+                                            alt="coca-cola" />
+                                        <h5 class="fw-bold mt-2">método 1</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing natus praesentium,
+                                            vero,
+                                            veritatis obcaecati earum pariatur?</p>
+                                    </div>
+                                    <div class=" col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/portifolio/banner2.jpeg"
+                                            alt="suco" />
+                                        <h5 class="fw-bold mt-2">método 2</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing natus praesentium,
+                                            vero,
+                                            veritatis obcaecati earum pariatur?</p>
+                                    </div>
+                                    <div class=" col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/portifolio/banner3.jpeg"
+                                            alt="coca-cola" />
+                                        <h5 class="fw-bold mt-2">método 4</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing natus praesentium,
+                                            vero,
+                                            veritatis obcaecati earum pariatur?</p>
+                                    </div>
+                                    <div class=" col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/portifolio/banner4.jpeg"
+                                            alt="suco" />
+                                        <h5 class="fw-bold mt-2">método 5</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing natus praesentium,
+                                            vero,
+                                            veritatis obcaecati earum pariatur?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="ui-ux">
+                                <div class="row">
+                                    <div class=" col-md-3">
+                                        <img class="d-block w-100 rounded"
+                                            src="https://wpmet.com/wp-content/uploads/2021/11/UI-vs-UX-inner-updated.png.webp"
+                                            alt="Designer UI/UX" />
+
+                                        <h5 class="fw-bold mt-2">UI</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing natus praesentium,
+                                            vero,
+                                            veritatis obcaecati earum pariatur?</p>
+                                    </div>
+                                    <div class=" col-md-3">
+                                        <img class="d-block w-100 rounded"
+                                            src="https://blog.cubos.academy/content/images/2023/02/Designer-UI.jpg"
+                                            alt="UX" />
+                                        <h5 class="fw-bold mt-2">UX</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing natus praesentium,
+                                            vero,
+                                            veritatis obcaecati earum pariatur?</p>
+                                    </div>
+                                    <div class=" col-md-3">
+                                        <img class="d-block w-100 rounded"
+                                            src="https://media.licdn.com/dms/image/D4D12AQFc5LoxpwX0FA/article-cover_image-shrink_720_1280/0/1715155304279?e=2147483647&v=beta&t=83nYDZY4NayGEtHBGXyM14MiNMjf96UWPmzcF8CO9OI"
+                                            alt="imagem UX/UI" />
+                                        <h5 class="fw-bold mt-2">UI/UX</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing natus praesentium,
+                                            vero,
+                                            veritatis obcaecati earum pariatur?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="identidade">
+                                <div class="row">
+                                    <div class=" col-md-3">
+                                        <img class="d-block w-100 rounded"
+                                            src="https://cldigitalconsultoria.com.br/wp-content/uploads/2022/04/identidade-visual-marketing-digital-cldigital.jpg" />
+
+                                        <h5 class="fw-bold mt-2">Entrada 1</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing natus praesentium,
+                                            vero,
+                                            veritatis obcaecati earum pariatur?</p>
+                                    </div>
+                                    <div class=" col-md-3">
+                                        <img class="d-block w-100 rounded"
+                                            src="https://cldigitalconsultoria.com.br/wp-content/uploads/2022/04/identidade-visual-marketing-digital-cldigital.jpg" />
+                                        <h5 class="fw-bold mt-2">Entrada 2</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing natus praesentium,
+                                            vero,
+                                            veritatis obcaecati earum pariatur?</p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="logo">
+                                <div class="row">
+                                    <div class=" col-md-3">
+                                        <img class="d-block w-100 rounded"
+                                            src="https://img.freepik.com/vetores-gratis/conjunto-de-vetor-de-ideias-de-design-de-logotipo-de-empresa_53876-64063.jpg" />
+
+                                        <h5 class="fw-bold mt-2">Pizzas</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing natus praesentium,
+                                            vero,
+                                            veritatis obcaecati earum pariatur?</p>
+                                    </div>
+                                    <div class=" col-md-3">
+                                        <img class="d-block w-100 rounded"
+                                            src="https://img.freepik.com/vetores-gratis/conjunto-de-vetor-de-ideias-de-design-de-logotipo-de-empresa_53876-64063.jpg" />
+                                        <h5 class="fw-bold mt-2">Salmão</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing natus praesentium,
+                                            vero,
+                                            veritatis obcaecati earum pariatur?</p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="ferramentas">
+                                <div class="row">
+                                    <div class=" col-md-3">
+                                        <img class="d-block w-100 rounded"
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"
+                                            alt="Cerveja" alt="Bolo" />
+
+                                        <h5 class="fw-bold mt-2">Bolos</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing natus praesentium,
+                                            vero,
+                                            veritatis obcaecati earum pariatur?</p>
+                                    </div>
+                                    <div class=" col-md-3">
+                                        <img class="d-block w-100 rounded"
+                                            src="https://img.utdstc.com/icon/62f/136/62f1369d2e49fdcdf4989596eefad984413b9f39a8edcb775ceda2ad736e686c:200"
+                                            alt="Cupcakes" />
+                                        <h5 class="fw-bold mt-2">Cupcakes</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing natus praesentium,
+                                            vero,
+                                            veritatis obcaecati earum pariatur?</p>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--           SOBRE O DESIGNER               -->
+
+        <section id="sobre" class="container pb-5 pt-5">
+            <div class="pt-5 pb-5 div4 rounded">
+                <div class="container pt-5 pb-5 ">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="https://cdn.pixabay.com/photo/2024/11/22/13/20/man-9216455_1280.jpg"
+                                class="d-block w-100 rounded" alt="foto do espaço interno do restaurante" />
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">o Designer</span></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus fuga consequatur
+                                deleniti
+                                non, quibusdam harum sapiente porro suscipit necessitatibus excepturi vero corrupti
+                                adipisci
+                                quisquam qui a aut! Labore, excepturi perspiciatis!</p>
+                            <h3 class="section-title">Experiencia <span class="text-colored">Comprovada</span></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas vitae modi in aperiam
+                                qui
+                                nulla
+                                dicta neque harum accusamus dolores iure, quidem obcaecati unde optio maiores, esse,
+                                fuga cumque
+                                facere?
+
+                            </p>
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--          TIPOS DE TRABALHO                -->
+
+        <section class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Para todas <span class="text-colored">as ocasiões</span>
+                    </h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="https://i.pinimg.com/736x/5c/d6/b1/5cd6b1200b1f9ba27289e3b5c708475c.jpg"
+                            class="rounded d-block w-100 mb-2" alt="Aniversários" />
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi p-3 bi-server"></i>Empresas
+                        </h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti totam ipsam at iure
+                            sit,
+                            magni officia commodi. Laborum eum saepe maxime sequi qui.
+                            Alias, voluptate mollitia. Eos porro natus repellat.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://i.pinimg.com/736x/70/48/35/7048359f18a66da5a5bca57cf055b634.jpg"
+                            class="rounded d-block w-100 mb-2" />
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi p-3 bi-pc-display-horizontal"></i>Web Designer
+                        </h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti totam ipsam at iure
+                            sit,
+                            magni officia commodi. Laborum eum saepe maxime sequi qui.
+                            Alias, voluptate mollitia. Eos porro natus repellat.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://i.pinimg.com/736x/af/b7/69/afb76957d28e223e0ea0afdf8c224172.jpg"
+                            class="rounded d-block w-100 mb-2" />
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi p-3 bi-reception-4"></i>Designe publicitário e Marketing
+                        </h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti totam ipsam at iure
+                            sit,
+                            magni officia commodi. Laborum eum saepe maxime sequi qui.
+                            Alias, voluptate mollitia. Eos porro natus repellat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--             FALE CONOSCO                   -->
+
+        <section id="fale-conosco" class="pt-5 pb-5 ">
+            <div class="container">
+                <h2 class="section-title text-center">Fale <span class="text-colored">Conosco <i
+                            class="bi bi-envelope-arrow-up"></i></span></h2>
+
+                <div class="row">
+                    <div class="col-md-7 mt-3 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class=" fw-bold text-colored form-label">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class=" fw-bold text-colored form-label">Seu E-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" id="telefone" class=" fw-bold text-colored form-label">Seu
+                                    Telefone
+                                    (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="fw-bold text-colored form-label">Seu mensagem</label>
+                                <textarea id="mensagem" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="fw-bold btn text-colored navbar-brand">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--                FOOTER                      -->
+
+        <footer class="p-5">
+            <div class="container text-center">
+                <div class="col-md-12 text-center">
+                    <div class="row text-center">
+                        <h3 class="section-title fs-4 text-colored">
+                            <i class="bi bi-emoji-sunglasses"></i> Redes sociais
+                        </h3>
+                        <div class="sociais">
+                            <ul class="social-links text-center">
+                                <li class="fs-4 text-center">
+                                    <a href="#">
+                                        <i class="bi m-3 bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-4">
+                                    <a href="#">
+                                        <i class="bi m-3 bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-4 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi m-3 bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <h3 class="section-title fs-4 text-colored">
+                            <i class="bi bi-geo-alt-fill"></i> Endereço
+                        </h3>
+                        <p>
+                            Rua Fictícia exemplo, N 2000, bairro, cidade - UF
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

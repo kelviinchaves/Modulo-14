@@ -1,0 +1,150 @@
+header {
+    background-color: #1E1E1E;
+    border-bottom: 1px solid #32DB8B;
+
+}
+
+body {
+    background-color: #1E1E1E;
+    color: #ffffff;
+}
+
+h1,
+h2,
+a {
+    font-family: "Exo 2", sans-serif;
+    cursor: pointer;
+}
+
+.navbar-brand {
+    color: #32DB8B;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #32DB8B;
+    color: #ffffff;
+}
+
+.nav-link {
+    background-color: #32DB8B;
+    color: #ffffff;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand {
+
+    color: #32DB8B;
+    transition: transform 0.3s;
+}
+
+.navbar-brand:hover {
+    color: #32DB8B;
+    transform: scale(1.06);
+}
+
+.content-2 {
+    width: 100%;
+    height: 140px;
+    background-color: #32DB8B;
+    box-shadow: 2px 10px 10px #32DB8B;
+    z-index: 1;
+    position: absolute;
+    padding-bottom: 40px;
+    color: #1E1E1E;
+}
+
+span {
+    color: #ffffff;
+}
+
+
+
+div {
+    overflow: hidden;
+    border-radius: 0.7rem;
+}
+
+img {
+    cursor: pointer;
+    transition: transform 0.3s, border 0.3s;
+}
+
+img:hover {
+    transform: scale(1.01);
+    border: 2px solid #32DB8B;
+}
+
+
+#sobre img {
+    border: 1px solid #32DB8B;
+    transition: transform 0.3s;
+}
+
+#sobre img:hover {
+    transform: scale(1.08);
+}
+
+.navbar-toggler {
+    background-color: #32DB8B;
+}
+
+.text-colored {
+    color: #32DB8B;
+}
+
+.div4 {
+    max-width: 100%;
+    background-color: #FAFBFB;
+    color: #1E1E1E;
+    box-shadow: 3px 10px 4px #FAFBFB;
+}
+
+
+.social-links {
+    display: flex;
+    list-style: none;
+
+}
+
+.nav-buttons .nav-links {
+    background-color: #32DB8B !important;
+    color: #ffffff !important;
+    border-style: 5px;
+}
+
+.nav-buttons .nav-link:hover,
+.nav-buttons .nav-link.active {
+    background-color: #32DB8B !important;
+    /* Cor ao passar o mouse ou ativo */
+    color: #ffffff !important;
+}
+
+#fale-conosco .row {
+    justify-content: center;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #161515;
+    color: #32DB8B;
+}
+
+.sociais {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 760px) {
+    #portfolio {
+        max-width: auto;
+    }
+}
