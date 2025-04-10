@@ -1,0 +1,43 @@
+@use 'variaveis';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        max-width: 80%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+
+        .products {
+            grid-template-columns: repeat(2, 48.5%);
+            column-gap: 3%;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .container {
+        display: block;
+
+        .products {
+            display: block;
+
+            .product-item {
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
