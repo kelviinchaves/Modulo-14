@@ -1,0 +1,19 @@
+{
+  "name": "atividade-gulp",
+  "version": "1.0.0",
+  "description": "Atividade prática do módulo Gulp - EBAC",
+  "main": "gulpfile.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "author": "Kelvin Chaves",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.79.4"
+  }
+}
