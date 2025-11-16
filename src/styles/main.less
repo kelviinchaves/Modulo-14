@@ -1,0 +1,136 @@
+
+@import "mapas.less";
+
+
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";// necessário especificar a mediaQuery com min e max width para melhor proporçao de tela
+
+
+.marginBotton8 {  // aqui criamos um mixin
+    margin-bottom: 8px;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #colors[background-color];
+    color:#colors[textColor];
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media @breakpointMobile {
+        max-width: 70%;
+    }
+
+    @media @breakpointTablet { //necessário colocar na ordem  correta para nao ser compilado todo em 1023px
+        max-width: 80%;
+        
+    }
+
+    
+}
+
+header{
+    padding-bottom: 24px;
+
+    
+    .profile-avatar {
+        
+        display: block;
+        margin: 0 auto 24px;
+        border-radius: 50%;
+        width: 130px;
+        
+        
+    
+    }
+
+    
+}
+
+.profile-bio {
+        text-align: center;
+        &-name {
+            font-size: 16px;
+            .marginBotton8();     //chamando o mixing
+        }
+
+        &-subtitle {
+            font-size: 14px;
+            .marginBotton8() ;    //chamando o mixing
+        }
+
+        &-description {
+            font-size: 14px;
+            opacity: .7; 
+        }
+    }
+
+.social-links {
+        display: flex;
+        justify-content: space-between;
+        max-width: 240px;
+        width: 100%;
+        margin: 0 auto;
+
+        
+        li {
+
+            img {
+                color: #colors[textColor];
+                width: 32px;
+                max-width: 100%;
+                transition: all ease .4s;
+                &:hover {
+                    transform: scale(1.3);
+                    
+                }
+            }
+        }
+    }
+
+    .projects-list {
+        margin-top: 32px ;
+        &-item {
+            a {
+                text-decoration: none;
+                background-color: #colors[bottonColor];
+                display: block;
+                border-radius:30px ;
+                padding: 16px 20px;
+                margin-bottom: 16px ;
+                text-align: center;
+                color: #colors[bottonTextColor];
+                font-weight: bold;
+                border: 2px solid #colors[bottonColor];
+                transition: all ease .4s;
+
+                &:hover {
+                    
+                    color:#colors[bottonColor];
+                    background-color: transparent;
+                    
+                    
+                }
+            }
+        }
+    }
